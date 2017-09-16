@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
             .useLines {
                 it.take(40)
                         .map {
-                            StringBuilder().apply { (0..Integer.parseInt(it)).map { append("*") } }
+                            StringBuilder().apply { (0..it.toInt()).map { append("*") } }
                         }.forEach { println(it) }
             }
 
