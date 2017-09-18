@@ -1,4 +1,4 @@
-package Various
+package FunctionTest
 
 /**
  * Created by ktr on 2017/09/18.
