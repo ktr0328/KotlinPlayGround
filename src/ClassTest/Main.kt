@@ -17,6 +17,6 @@ fun main(args: Array<String>) {
 //    println(Rational(1, 0)) // エラー IllegalArgumentException
 
     println("3/8 + 2/5 = ${Rational(4, 8).plus(Rational(2, 5))}")
-    
+
     println("2 + 5/9 = ${2 + Rational(5, 9)}")
 }
