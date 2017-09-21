@@ -11,12 +11,18 @@ fun main(args: Array<String>) {
     println(test2)
 
     println(Hoge("hogeeee") + Hoge(" + hogee"))
+    val hoge = Hoge("hogehoge")
+    hoge()
 }
 
 class Hoge(var value: String) {
     override fun toString(): String {
         return value
     }
+}
+
+operator fun Hoge.invoke(): Unit {
+    println(this.value)
 }
 
 operator fun Hoge.plus(hoge: Hoge): String = this.value + hoge.value
