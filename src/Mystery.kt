@@ -7,7 +7,9 @@ fun main(args: Array<String>) {
      * 256の間だとtrue
      * Int? はIntegerとして扱われていて、なんかプールされているらしい？
      * boxingが関係している模様
-     * 謎
+     *
+     * Integerの仕組み上、128からは別のobjectが生成されるっぽい
+     * その結果falseになるっぽい
      */
 
     val a: Int? = 127
